@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - HaoRU Mental Wellness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/resources.css" rel="stylesheet">
+</head>
+<body>
+    <!-- FIXED NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container-fluid">
+            <!-- Brand/Logo -->
+            <a class="navbar-brand fw-bold text-primary fs-3" href="/html/index.html">
+                <i class="bi bi-heart-pulse me-2"></i>HaoRU
+            </a>
+            <!-- Mobile toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="/html/index.html">
+                            <i class="bi bi-house me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5" href="/html/resources.html">
+                            <i class="bi bi-book me-1"></i>Resources
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="/html/support.html">
+                            <i class="bi bi-chat-heart me-1"></i>Get Support
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<main class="main-content">
+    <div class="container-fluid">
+        <section class="resources-hero py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Mental Health Resources</h1>
+                    <p class="lead mb-3">Discover evidence-based tools, insights, and future developments in mental wellness for students</p>
+                </div>
+            </div>
+        </section>
+        <section class="tips-section py-5">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Daily Wellness Tips</h2>
+                    <p class="lead text-muted">Evidence-based strategies for better mental health</p>
+                </div>
+            </div>
+            <!--Multi-column layout -->
+            <div class="row g-4 justify-content-center">
+                <!-- Column 1 - Morning Routine -->
+        <!-- Morning Routine Card with Animated Bar -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="flip-card" data-card="morning">
+                    <div class="flip-card-inner">
+                        <!-- Front of card  -->
+                        <div class="flip-card-front">
+                            <div class="tip-icon">
+                                <i class="bi bi-sun display-4 text-warning"></i>
+                            </div>
+                            <h5 class="fw-bold">Morning Routine</h5>
+                            <p>Start your day with 10 minutes of mindfulness or light exercise to boost mood and energy levels.</p>
+                            <button type="button" class="btn btn-primary flip-btn">Try This!</button>
+                        </div>
+                        <!-- Back of card -->
+                        <!-- Back of card -->
+                        <div class="flip-card-back">
+                            <h5 class="fw-bold mb-3">How did you start your morning?</h5>
+                            <div class="choice-buttons">
+                                <button type="button" class="choice-btn" data-progress="45" data-text="I just got up and checked my phone">Just woke up &amp; checked phone</button>
+                                <button type="button" class="choice-btn" data-progress="70" data-text="I did 5 minutes of deep breathing">5-minute breathing exercise</button>
+                                <button type="button" class="choice-btn" data-progress="85" data-text="I meditated and did gentle stretches">10-minute meditation + stretches</button>
+                                <button type="button" class="choice-btn" data-progress="100" data-text="I had a full mindful morning routine">Full routine: meditation, journaling, exercise</button>
+                            </div>
+                            <div class="progress-section mt-4">
+                                <div class="progress thin-progress">
+                                    <div class="progress-bar" data-progress-bar="morning"></div>
+                                </div>
+                                <small class="progress-text" data-progress-text="morning">Choose your morning approach!</small>
+                            </div>
+                            <button type="button" class="btn btn-outline-primary back-btn mt-3">
+                                 <i class="bi bi-arrow-left"></i>
+                                <span class="visually-hidden">Back</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Sleep Hygiene Card -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="flip-card" data-card="sleep">
+                    <div class="flip-card-inner">
+                        <!-- Front of card -->
+                        <div class="flip-card-front">
+                            <div class="tip-icon">
+                                <i class="bi bi-moon-stars display-4 text-info"></i>
+                            </div>
+                            <h5 class="fw-bold">Sleep Hygiene</h5>
+                            <p>Quality sleep is crucial for mental health. How well did you prepare for sleep last night?</p>
+                            <button type="button" class="btn btn-primary flip-btn">Check My Sleep!</button>
+                        </div>
+                        <!-- Back of card -->
+                        <div class="flip-card-back">
+                            <h5 class="fw-bold mb-3">How did you prepare for sleep?</h5>
+                            <div class="choice-buttons">
+                                <button type="button" class="choice-btn" data-progress="30" data-text="I scrolled on my phone until I fell asleep">Stayed on phone till sleepy</button>
+                                <button type="button" class="choice-btn" data-progress="60" data-text="I put devices away 30 minutes before bed">No screens 30min before bed</button>
+                                <button type="button" class="choice-btn" data-progress="80" data-text="I had a calming bedtime routine">Relaxing routine + early screen cutoff</button>
+                                <button type="button" class="choice-btn" data-progress="100" data-text="Perfect sleep hygiene with 8+ hours">8+ hours + perfect sleep environment</button>
+                            </div>
+                            <div class="progress-section mt-4">
+                                <div class="progress thin-progress">
+                                    <div class="progress-bar" data-progress-bar="sleep"></div>
+                                </div>
+                                <small class="progress-text" data-progress-text="sleep">Rate your sleep preparation!</small>
+                            </div>
+                            <button type="button" class="btn btn-outline-primary back-btn mt-3">
+                                <i class="bi bi-arrow-left"></i>
+                                <span class="visually-hidden">Back</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Stress Management Card -->
+<!-- Stress Management Card - FIXED STRUCTURE -->
+<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+    <div class="flip-card" data-card="stress">
+        <div class="flip-card-inner">
+            <!-- Front of card -->
+            <div class="flip-card-front">
+                <div class="tip-icon">
+                    <i class="bi bi-heart-pulse display-4 text-success"></i>
+                </div>
+                <h5 class="fw-bold">Stress Management</h5>
+                <p>Managing academic and life stress is key to mental wellness. How did you handle stress today?</p>
+                <button type="button" class="btn btn-primary flip-btn">Check My Stress!</button>
+            </div>
+
+            <!-- Back of card - MOVED INSIDE flip-card-inner -->
+            <div class="flip-card-back">
+                <h5 class="fw-bold mb-3">How did you manage stress today?</h5>
+                <div class="choice-buttons">
+                    <button type="button" class="choice-btn" data-progress="25" data-text="I felt overwhelmed and didn't cope well">Felt overwhelmed, no coping strategies</button>
+                    <button type="button" class="choice-btn" data-progress="55" data-text="I took a few deep breaths when stressed">Quick breathing exercises when needed</button>
+                    <button type="button" class="choice-btn" data-progress="75" data-text="I used mindfulness and took breaks">Mindful breaks + stress awareness</button>
+                    <button type="button" class="choice-btn" data-progress="100" data-text="I proactively managed stress with multiple techniques">Multiple techniques: exercise, meditation, journaling</button>
+                </div>
+                <div class="progress-section mt-4">
+                    <div class="progress thin-progress">
+                        <div class="progress-bar" data-progress-bar="stress"></div>
+                    </div>
+                    <small class="progress-text" data-progress-text="stress">Evaluate your stress management!</small>
+                </div>
+                <button type="button" class="btn btn-outline-primary back-btn mt-3">
+                     <i class="bi bi-arrow-left"></i>
+                    <span class="visually-hidden">Back</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</section>
+<section class="informational-section py-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Mental Health Insights &amp; Developments</h2>
+                <p class="lead text-muted">Research findings, trends, and future innovation in student wellness</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="accordion" id="mentalHealthAccordion">
+
+                    <!-- FIRST ACCORDION -  -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingResearch">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseResearch" aria-expanded="true" 
+                                    aria-controls="collapseResearch">
+                                <i class="bi bi-graph-up-arrow me-3 text-primary"></i>
+                                Latest Research in Student Mental Health
+                            </button>
+                        </h2>
+                        <div id="collapseResearch" class="accordion-collapse collapse show"
+                             aria-labelledby="headingResearch" data-bs-parent="#mentalHealthAccordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="text-primary mb-3"><i class="bi bi-graph-up me-2"></i>Key Statistics</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-phone-fill text-success me-3 fs-4"></i>
+                                                    <div>
+                                                        <strong class="text-success">85%</strong> of students report improved focus with mindfulness apps
+                                                        <br><small class="text-muted">Source: NUS Mental Health Study 2024</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-people-fill text-info me-3 fs-4"></i>
+                                                    <div>
+                                                        <strong class="text-info">72%</strong> prefer peer support over traditional counseling
+                                                        <br><small class="text-muted">Survey of 2,000 Singapore students</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-heart-pulse-fill text-warning me-3 fs-4"></i>
+                                                    <div>
+                                                        <strong class="text-warning">63%</strong> use digital wellness tools daily
+                                                        <br><small class="text-muted">Ministry of Health Digital Health Report</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="text-primary mb-3"><i class="bi bi-lightbulb me-2"></i>Research Insights</h5>
+                                        <div class="mb-3">
+                                            <div class="alert alert-success" role="alert">
+                                                <i class="bi bi-check-circle me-2"></i>
+                                                <strong>Breakthrough Finding:</strong> Students using digital mental health resources show 40% better stress management compared to traditional methods alone.
+                                            </div>
+                                        </div>
+                                        <p class="text-muted mb-3">Recent studies from Singapore universities demonstrate significant improvements in student wellbeing through integrated digital approaches.</p>
+
+                                        <div class="border-start border-primary border-3 ps-3 mb-3">
+                                            <p class="text-muted mb-1">"AI-powered wellness coaching shows promising results in early intervention for anxiety and depression among university students."</p>
+                                            <small class="text-primary">- Dr. Sarah Lim, NTU Psychology Department</small>
+                                        </div>
+
+                                        <div class="bg-light p-3 rounded">
+                                            <h6 class="text-primary mb-2"><i class="bi bi-target me-2"></i>Key Findings:</h6>
+                                            <ul class="list-unstyled small text-muted mb-0">
+                                                <li>• Personalized interventions increase engagement by 67%</li>
+                                                <li>• Peer support networks reduce dropout rates</li>
+                                                <li>• Early detection prevents 80% of crisis escalations</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECOND ACCORDION  -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFuture">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFuture" aria-expanded="false" 
+                                    aria-controls="collapseFuture">
+                                <i class="bi bi-lightbulb me-3 text-warning"></i>
+                                Future of Digital Mental Health
+                            </button>
+                        </h2>
+                        <div id="collapseFuture" class="accordion-collapse collapse"
+                             aria-labelledby="headingFuture" data-bs-parent="#mentalHealthAccordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="text-warning mb-3">Emerging Technologies</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">
+                                                <i class="bi bi-robot text-primary me-2"></i>
+                                                <strong>AI Therapy Bots:</strong> 24/7 emotional support and crisis intervention
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-eye text-info me-2"></i>
+                                                <strong>VR Meditation:</strong> Immersive environments for anxiety reduction
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-heart-pulse text-success me-2"></i>
+                                                <strong>Biometric Tracking:</strong> Real-time stress detection via smartwatches
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-phone text-warning me-2"></i>
+                                                <strong>Micro-Interventions:</strong> AI-powered just-in-time support
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="text-warning mb-3">Singapore's Digital Health Vision</h5>
+                                        <p class="text-muted">By 2030, Singapore aims to integrate mental health apps into national healthcare, making digital wellness tools accessible to all students.</p>
+                                        <p class="text-muted">Universities are piloting AI-powered early warning systems that detect mental health risks through academic performance patterns and campus behavior analytics.</p>
+                                        <div class="alert alert-info mt-3">
+                                            <i class="bi bi-info-circle me-2"></i>
+                                            <strong>Did you know?</strong> NTU and NUS are collaborating on a campus-wide mental wellness platform launching in 2026.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- THIRD ACCORDION  -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSingapore">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSingapore" aria-expanded="false" 
+                                    aria-controls="collapseSingapore">
+                                <i class="bi bi-people-fill me-3 text-success"></i>
+                                Singapore Mental Health Initiatives
+                            </button>
+                        </h2>
+                        <div id="collapseSingapore" class="accordion-collapse collapse"
+                             aria-labelledby="headingSingapore" data-bs-parent="#mentalHealthAccordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="text-success mb-3"><i class="bi bi-flag me-2"></i>Government Programs</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-hospital text-primary me-3 fs-4"></i>
+                                                    <div>
+                                                        <strong>National Mental Health Blueprint</strong>
+                                                        <br><small class="text-muted">Comprehensive strategy for mental health services</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-book text-info me-3 fs-4"></i>
+                                                    <div>
+                                                        <strong>Campus Mental Health Programs</strong>
+                                                        <br><small class="text-muted">Mandatory in all tertiary institutions</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-telephone text-success me-3 fs-4"></i>
+                                                    <div>
+                                                        <strong>24/7 Crisis Helplines</strong>
+                                                        <br><small class="text-muted">SOS (1767) and IMH Emergency (6389 2222)</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="text-success mb-3"><i class="bi bi-people me-2"></i>Community Support</h5>
+                                        <div class="alert alert-success" role="alert">
+                                            <i class="bi bi-check-circle me-2"></i>
+                                            <strong>Recent Achievement:</strong> Singapore achieved 95% awareness rate for mental health services among students aged 16-25.
+                                        </div>
+
+                                        <div class="border-start border-success border-3 ps-3 mb-3">
+                                            <p class="text-muted mb-1">"Mental health is not a luxury - it's a necessity for our young people to thrive."</p>
+                                            <small class="text-success">- Minister for Health, Singapore</small>
+                                        </div>
+
+                                        <div class="bg-light p-3 rounded">
+                                            <h6 class="text-success mb-2"><i class="bi bi-graph-up me-2"></i>Impact Statistics:</h6>
+                                            <ul class="list-unstyled small text-muted mb-0">
+                                                <li>• 40% increase in help-seeking behavior since 2020</li>
+                                                <li>• 85% of students know where to get mental health support</li>
+                                                <li>• 92% satisfaction rate with campus counseling services</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOURTH ACCORDION-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTools">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTools" aria-expanded="false" 
+                                    aria-controls="collapseTools">
+                                <i class="bi bi-tools me-3 text-info"></i>
+                                Practical Mental Health Tools
+                            </button>
+                        </h2>
+                        <div id="collapseTools" class="accordion-collapse collapse"
+                             aria-labelledby="headingTools" data-bs-parent="#mentalHealthAccordion">
+                            <div class="accordion-body">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="text-center p-3 border rounded">
+                                            <i class="bi bi-moon-stars display-4 text-info mb-3"></i>
+                                            <h6 class="fw-bold">Sleep Tracking</h6>
+                                            <p class="small text-muted mb-0">Monitor sleep patterns and improve sleep hygiene for better mental health.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-center p-3 border rounded">
+                                            <i class="bi bi-journal-text display-4 text-warning mb-3"></i>
+                                            <h6 class="fw-bold">Mood Journaling</h6>
+                                            <p class="small text-muted mb-0">Track daily emotions and identify patterns in your mental wellness journey.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-center p-3 border rounded">
+                                            <i class="bi bi-people-fill display-4 text-success mb-3"></i>
+                                            <h6 class="fw-bold">Peer Support</h6>
+                                            <p class="small text-muted mb-0">Connect with other students in moderated support groups and peer counseling.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 p-3 bg-info bg-opacity-10 rounded">
+                                    <h6 class="text-info mb-2"><i class="bi bi-info-circle me-2"></i>Pro Tip:</h6>
+                                    <p class="small mb-0">Combine multiple tools for best results. Students who use 3+ mental health strategies show 60% better stress management outcomes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="breathing-exercise py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="breathing-container">
+                    <h3 class="breathing-title">Breathing Exercise</h3>
+                    <!-- Main breathing layout with side panel -->
+                    <div class="breathing-layout">
+                        <!-- Settings Panel (Left Side) -->
+                        <div class="breathing-settings">
+                            <div class="settings-header">
+                                <i class="bi bi-gear-fill"></i>
+                                <span>Settings</span>
+                            </div>
+                            <div class="setting-item">
+                                <label>Inhale:</label>
+                                <div class="setting-control">
+                                    <input type="range" id="inhale-slider" min="2" max="8" value="4" class="slider">
+                                    <span id="inhale-value">4s</span>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <label>Hold:</label>
+                                <div class="setting-control">
+                                    <input type="range" id="hold-slider" min="1" max="6" value="2" class="slider">
+                                    <span id="hold-value">2s</span>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <label>Exhale:</label>
+                                <div class="setting-control">
+                                    <input type="range" id="exhale-slider" min="2" max="8" value="4" class="slider">
+                                    <span id="exhale-value">4s</span>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <label>Speed:</label>
+                                <div class="setting-control">
+                                    <input type="range" id="speed-slider" min="5" max="20" value="10" class="slider">
+                                    <span id="speed-value">1x</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Breathing Circle (Right Side) -->
+                        <div class="breathing-main">
+                            <div class="breathing-circle-wrapper">
+                                <div class="breathing-circle">
+                                    <span class="breathing-text">Click to Start</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</div>
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/resources.js"></script>
+</body>
+</html>
