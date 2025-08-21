@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Support - HaoRU Mental Wellness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/support.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- FIXED NAVBAR (Same as other pages) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container-fluid">
+            <!-- Brand/Logo -->
+            <a class="navbar-brand fw-bold text-primary fs-3" href="/html/index.html">
+                <i class="bi bi-heart-pulse me-2"></i>HaoRU
+            </a>
+            <!-- Mobile toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="/html/index.html">
+                            <i class="bi bi-house me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="/html/resources.html">
+                            <i class="bi bi-book me-1"></i>Resources
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5" href="/html/support.html">
+                            <i class="bi bi-chat-heart me-1"></i>Get Support
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+    <section class="support-hero py-5">
+            <div class="container-fluid">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold mb-3">Mental Health Support Center</h1>
+                        <p class="lead mb-4">Whether you need immediate crisis support, want to talk to someone, or are looking for resources, we're here to help you on your mental wellness journey.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+<section class="emergency-contacts py-3">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-12 text-center">
+                <h5 class="mb-2"><i class="bi bi-shield-heart me-2 text-danger"></i>Emergency Mental Health Support</h5>
+                <p class="small text-muted mb-0">Available 24/7 across Singapore</p>
+            </div>
+        </div>
+        <div class="row" id="emergency-contacts-container">
+            <!-- JavaScript will generate contact cards here -->
+        </div>
+    </div>
+</section>
+        <!-- MAIN HEADER SECTION -->
+
+
+        <!-- QUICK SUPPORT OPTIONS - Multi-column Layout -->
+        <section class="quick-support py-5 bg-light">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="display-5 fw-bold mb-3">Choose Your Support Type</h2>
+                        <p class="lead text-muted">Different situations call for different types of help. Choose what feels right for you.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Immediate Crisis Support -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="support-card h-100 border-danger">
+                            <div class="card-header bg-danger text-white">
+                                <h5 class="mb-0"><i class="bi bi-exclamation-triangle-fill me-2"></i>Crisis Support</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Immediate help for thoughts of self-harm, severe depression, or mental health emergencies.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-telephone text-danger me-2"></i>SOS Hotline: <strong>1767</strong></li>
+                                    <li><i class="bi bi-hospital text-danger me-2"></i>IMH Emergency: <strong>6389 2222</strong></li>
+                                    <li><i class="bi bi-chat-dots text-danger me-2"></i>Crisis Chat: Available 24/7</li>
+                                </ul>
+                                <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#crisisModal">Get Crisis Help Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional Counseling -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="support-card h-100 border-primary">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0"><i class="bi bi-person-heart me-2"></i>Professional Counseling</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Schedule sessions with licensed mental health professionals for ongoing support and therapy.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-calendar-check text-primary me-2"></i>Book Appointments</li>
+                                    <li><i class="bi bi-camera-video text-primary me-2"></i>Video/Phone Sessions</li>
+                                    <li><i class="bi bi-person-workspace text-primary me-2"></i>Campus Counselors</li>
+                                </ul>
+                                <a href="#supportFormSection" class="btn btn-primary w-100">Request Counseling</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Peer Support -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="support-card h-100 border-success">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0"><i class="bi bi-people-fill me-2"></i>Peer Support</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Connect with other students who understand what you're going through in safe, moderated groups.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-chat-square-text text-success me-2"></i>Support Groups</li>
+                                    <li><i class="bi bi-people text-success me-2"></i>Peer Mentoring</li>
+                                    <li><i class="bi bi-calendar-event text-success me-2"></i>Weekly Meetups</li>
+                                </ul>
+                                <a href="#supportFormSection" class="btn btn-success w-100">Join Peer Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE MOOD CHECK-IN -->
+        <section class="mood-checkin py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="mood-card">
+                            <div class="text-center mb-4">
+                                <h3 class="fw-bold mb-3">How are you feeling today?</h3>
+                                <p class="text-muted">Take a moment to check in with yourself. Your feelings are valid.</p>
+                            </div>
+
+                            <div class="mood-selector">
+                                <div class="row g-3 justify-content-center">
+                                    <div class="col-auto">
+                                        <button type="button" class="mood-btn" data-mood="great" data-color="success">
+                                            <span class="mood-emoji">😊</span>
+                                            <span class="mood-label">Great</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="mood-btn" data-mood="good" data-color="primary">
+                                            <span class="mood-emoji">🙂</span>
+                                            <span class="mood-label">Good</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="mood-btn" data-mood="okay" data-color="warning">
+                                            <span class="mood-emoji">😐</span>
+                                            <span class="mood-label">Okay</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="mood-btn" data-mood="difficult" data-color="info">
+                                            <span class="mood-emoji">😕</span>
+                                            <span class="mood-label">Difficult</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="mood-btn" data-mood="struggling" data-color="danger">
+                                            <span class="mood-emoji">😢</span>
+                                            <span class="mood-label">Struggling</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mood-response mt-4" id="moodResponse" style="display: none;">
+                                <div class="alert" id="moodAlert">
+                                    <div id="moodTitle" class="fw-bold mb-2"></div>
+                                    <p id="moodMessage"></p>
+                                    <div id="moodActions"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPPORT REQUEST FORM -->
+        <section class="support-form-section py-5 bg-light" id="supportForm">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Form Header -->
+                        <div class="text-center mb-5">
+                            <h2 class="display-5 fw-bold mb-3">Request Support</h2>
+                            <p class="lead text-muted">Fill out this form and we'll connect you with the right type of support for your needs</p>
+                        </div>
+
+                        <!-- Support Form Card -->
+                        <div class="card shadow-lg border-0">
+                            <div class="card-header bg-primary text-white text-center py-3">
+                                <h3 class="mb-0">
+                                    <i class="bi bi-heart-pulse me-2"></i>
+                                    Support Request Form
+                                </h3>
+                            </div>
+
+                            <div class="card-body p-4">
+                                <form id="supportForm1" action="https://script.google.com/macros/s/AKfycbzHogPcFX2naRmsWrA3FE46Gi-x9oR0zseN2bt-u8uggGumCyY1Vf-6M6g-70SGMa19/exec" method="POST" novalidate>
+
+                                    <div class="mb-4">
+                                        <label for="fullName" class="form-label fw-semibold">
+                                            <i class="bi bi-person me-1 text-primary"></i>
+                                            Full Name <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" class="form-control form-control-lg" id="fullName" name="fullName" placeholder="Enter your full name" required minlength="2" maxlength="50">
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <div class="invalid-feedback" id="nameError"></div>
+                                            <small class="text-muted"><span id="nameCount">0</span>/50 characters</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="email" class="form-label fw-semibold">
+                                            <i class="bi bi-envelope me-1 text-primary"></i>
+                                            Email Address <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="your.email@example.com" required>
+                                        <div class="mt-2">
+                                            <div class="invalid-feedback" id="emailError"></div>
+                                            <div class="valid-feedback" id="emailSuccess">
+                                                <i class="bi bi-check-circle me-1"></i>Valid email format
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="supportType" class="form-label fw-semibold">
+                                            <i class="bi bi-life-preserver me-1 text-primary"></i>
+                                            Type of Support Needed <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-select form-select-lg" id="supportType" name="supportType" required>
+                                            <option value="">Choose support type...</option>
+                                            <option value="crisis">🚨 Crisis Support (Immediate Help)</option>
+                                            <option value="counseling">💬 Professional Counseling</option>
+                                            <option value="peer">👥 Peer Support Group</option>
+                                            <option value="information">📚 Information &amp; Resources</option>
+                                            <option value="academic">📖 Academic Stress Support</option>
+                                            <option value="other">🔧 Other</option>
+                                        </select>
+                                        <div class="mt-2">
+                                            <div class="invalid-feedback" id="supportTypeError"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <div class="form-label fw-semibold mb-3">
+                                            <i class="bi bi-speedometer2 me-1 text-primary"></i>
+                                            Urgency Level <span class="text-danger">*</span>
+                                        </div>
+
+                                        <div class="row g-3">
+                                            <div class="col-6 col-md-3">
+                                                <div class="form-check p-2 border rounded text-center">
+                                                    <input class="form-check-input" type="radio" name="urgency" id="urgencyLow" value="low" required>
+                                                    <label class="form-check-label w-100 d-block" for="urgencyLow">
+                                                        <span class="badge bg-success d-block mb-1">Low</span>
+                                                        <small class="d-block">Can wait a few days</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-3">
+                                                <div class="form-check p-2 border rounded text-center">
+                                                    <input class="form-check-input" type="radio" name="urgency" id="urgencyMedium" value="medium" required>
+                                                    <label class="form-check-label w-100 d-block" for="urgencyMedium">
+                                                        <span class="badge bg-warning d-block mb-1">Medium</span>
+                                                        <small class="d-block">Need help within 24hrs</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-3">
+                                                <div class="form-check p-2 border rounded text-center">
+                                                    <input class="form-check-input" type="radio" name="urgency" id="urgencyHigh" value="high" required>
+                                                    <label class="form-check-label w-100 d-block" for="urgencyHigh">
+                                                        <span class="badge bg-danger d-block mb-1">High</span>
+                                                        <small class="d-block">Need immediate support</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-3">
+                                                <div class="form-check p-2 border rounded text-center">
+                                                    <input class="form-check-input" type="radio" name="urgency" id="urgencyCrisis" value="crisis" required>
+                                                    <label class="form-check-label w-100 d-block" for="urgencyCrisis">
+                                                        <span class="badge bg-dark d-block mb-1">Crisis</span>
+                                                        <small class="d-block">Emergency situation</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-2">
+                                            <div class="invalid-feedback" id="urgencyError"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <div class="form-label fw-semibold mb-3">
+                                            <i class="bi bi-heart-pulse me-1 text-primary"></i>
+                                            Current Concerns <span class="text-muted">(Select all that apply)</span>
+                                        </div>
+
+                                        <div class="row g-3">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-check p-3 border rounded">
+                                                    <input class="form-check-input" type="checkbox" id="anxietyStress" name="anxiety" value="anxiety">
+                                                    <label class="form-check-label" for="anxietyStress">😰 Anxiety &amp; Stress</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-check p-3 border rounded">
+                                                    <input class="form-check-input" type="checkbox" id="depression" name="depression" value="depression">
+                                                    <label class="form-check-label" for="depression">😢 Depression &amp; Low Mood</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-check p-3 border rounded">
+                                                    <input class="form-check-input" type="checkbox" id="academicPressure" name="academic" value="academic">
+                                                    <label class="form-check-label" for="academicPressure">📚 Academic Pressure</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-check p-3 border rounded">
+                                                    <input class="form-check-input" type="checkbox" id="socialIssues" name="social" value="social">
+                                                    <label class="form-check-label" for="socialIssues">👥 Social Relationship Issues</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-check p-3 border rounded">
+                                                    <input class="form-check-input" type="checkbox" id="sleepIssues" name="sleep" value="sleep">
+                                                    <label class="form-check-label" for="sleepIssues">😴 Sleep Problems</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-check p-3 border rounded">
+                                                    <input class="form-check-input" type="checkbox" id="otherConcerns" name="other" value="other">
+                                                    <label class="form-check-label" for="otherConcerns">🤔 Other Concerns</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-2">
+                                            <small class="text-muted">
+                                                <i class="bi bi-info-circle me-1"></i>
+                                                Select at least one concern to help us provide appropriate support
+                                            </small>
+                                            <div class="invalid-feedback" id="concernsError"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- SUBMIT BUTTON -->
+                                    <div class="d-grid gap-2 mt-4">
+                                        <button type="submit" class="btn btn-primary btn-lg">
+                                            <i class="bi bi-send me-2"></i>
+                                            Submit Support Request
+                                        </button>
+                                        <button type="reset" class="btn btn-outline-secondary">
+                                            <i class="bi bi-arrow-clockwise me-2"></i>
+                                            Clear Form
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUCCESS STORIES - Testimonials -->
+
+    </main>
+
+    <!-- CRISIS MODAL -->
+    <div class="modal fade" id="crisisModal" tabindex="-1" aria-labelledby="crisisModalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-danger">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="crisisModalLabel">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i>Crisis Support Contacts
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="crisis-contacts">
+                        <div class="contact-item mb-3 p-3 border rounded">
+                            <h6 class="text-danger">
+                                <i class="bi bi-telephone-fill me-2"></i>SOS Hotline
+                            </h6>
+                            <p class="h4 mb-1"><a href="tel:1767" class="text-decoration-none">1767</a></p>
+                            <small class="text-muted">24/7 emotional support for people in crisis</small>
+                        </div>
+
+                        <div class="contact-item mb-3 p-3 border rounded">
+                            <h6 class="text-danger">
+                                <i class="bi bi-hospital me-2"></i>IMH Emergency Helpline
+                            </h6>
+                            <p class="h4 mb-1"><a href="tel:63892222" class="text-decoration-none">6389&#8209;2222</a></p>
+                            <small class="text-muted">Institute of Mental Health emergency line</small>
+                        </div>
+
+                        <div class="contact-item mb-3 p-3 border rounded">
+                            <h6 class="text-danger">
+                                <i class="bi bi-chat-dots-fill me-2"></i>Online Crisis Chat
+                            </h6>
+                            <p class="mb-1"><a href="https://www.sos.org.sg" target="_blank" class="text-decoration-none">sos.org.sg</a></p>
+                            <small class="text-muted">Live chat support available 24/7</small>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-warning mt-3">
+                        <small><strong>Emergency:</strong> If you're in immediate physical danger, call <strong>999</strong> or go to your nearest emergency room.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/support.js"></script>
+</body>
+</html>
